@@ -1,7 +1,6 @@
-package com.youthia.youthia;
+package com.youthia.youthia.Fragments;
 
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -11,6 +10,11 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.youthia.youthia.Adapter.ContactsAdapter;
+import com.youthia.youthia.Contact;
+import com.youthia.youthia.DividerItemDecoration;
+import com.youthia.youthia.R;
 
 import java.util.ArrayList;
 import java.util.List;

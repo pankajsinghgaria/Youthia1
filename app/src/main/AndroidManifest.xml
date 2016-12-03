@@ -8,14 +8,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginScreen">
+        <activity android:name=".ActivityClass.LoginScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".ActivityClass.HomeActivity" />
+        <activity android:name=".ActivityClass.AdminLogin" />
+        <activity android:name=".ActivityClass.AdminPage"></activity>
     </application>
 
 </manifest>

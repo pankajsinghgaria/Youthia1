@@ -1,10 +1,13 @@
-package com.youthia.youthia;
+package com.youthia.youthia.Adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.youthia.youthia.Contact;
+import com.youthia.youthia.R;
 
 import java.util.List;
 

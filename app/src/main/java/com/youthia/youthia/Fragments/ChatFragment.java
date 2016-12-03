@@ -1,4 +1,4 @@
-package com.youthia.youthia;
+package com.youthia.youthia.Fragments;
 
 
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.youthia.youthia.R;
 
 
 public class ChatFragment extends Fragment{

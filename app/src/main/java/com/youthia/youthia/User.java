@@ -5,18 +5,19 @@ package com.youthia.youthia;
  */
 
 public class User {
-    public String reg_id, name, emailId, number, qualification, occupattion;
+    public String reg_id, name, emailId, number, qualification, occupattion, password;
 
     public User() {
     }
 
-    public User(String reg_id, String name, String emailId, String number, String qualification, String occupattion) {
+    public User(String reg_id, String name, String emailId, String number, String qualification, String occupattion, String password) {
         this.reg_id = reg_id;
         this.name = name;
         this.emailId = emailId;
         this.number = number;
         this.qualification = qualification;
         this.occupattion = occupattion;
+        this.password = password;
     }
 
     public String getReg_id() {
@@ -65,5 +66,13 @@ public class User {
 
     public void setOccupattion(String occupattion) {
         this.occupattion = occupattion;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

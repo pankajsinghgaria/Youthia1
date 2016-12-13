@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "844863873674",
+    "firebase_url": "https://youthia-8e9f0.firebaseio.com",
+    "project_id": "youthia-8e9f0",
+    "storage_bucket": "youthia-8e9f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844863873674:android:77b021409eed034c",
+        "android_client_info": {
+          "package_name": "com.youthia.youthia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844863873674-qtm8d3g13oaeabbbmei0v20mhr3ecb6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Fs-BQhhb7l_mlSfYiuBLohSZXHuHjIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

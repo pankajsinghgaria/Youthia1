@@ -22,13 +22,13 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new ChatFragment();
+                return new PostFragment();
             case 1:
                 return new ContactsFragment();
             case 2:
-                return new PostFragment();
-            default:
                 return new ChatFragment();
+            default:
+                return new PostFragment();
         }
     }
 

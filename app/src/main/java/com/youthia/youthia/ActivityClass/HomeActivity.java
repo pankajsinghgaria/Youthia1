@@ -13,7 +13,7 @@ import com.youthia.youthia.Adapter.ViewPagerAdapter;
 import com.youthia.youthia.R;
 
 
-public class HomeActivity extends AppCompatActivity {
+public class  HomeActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -41,9 +41,9 @@ public class HomeActivity extends AppCompatActivity {
         contacts.setText("Contacts");
         posts.setText("Posts");
 
-        tabLayout.addTab(chat, 0);
+        tabLayout.addTab(posts, 0);
         tabLayout.addTab(contacts, 1);
-        tabLayout.addTab(posts, 2);
+        tabLayout.addTab(chat, 2);
 
         tabLayout.setTabTextColors(ContextCompat.getColorStateList(this, R.color.tab_selector));
         tabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(this, R.color.indicator));

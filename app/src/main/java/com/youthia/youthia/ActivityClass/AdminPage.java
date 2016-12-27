@@ -1,7 +1,9 @@
 package com.youthia.youthia.ActivityClass;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,19 +11,20 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.iid.FirebaseInstanceId;
 import com.youthia.youthia.R;
 import com.youthia.youthia.User;
 
 public class AdminPage extends AppCompatActivity {
     EditText regId, name, email, number, qualification, occupation;
-    Button addUser;
+    Button addUser, listUser;
     private DatabaseReference mFirebaseReference;
     private FirebaseDatabase mFirebaseInstance;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_page);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(myToolbar);
 
         mFirebaseInstance = FirebaseDatabase.getInstance();
         mFirebaseReference = mFirebaseInstance.getReference("Users");
@@ -90,6 +93,16 @@ public class AdminPage extends AppCompatActivity {
                     occupation.setText("");
                     regId.requestFocus();
                 }
+            }
+        });
+
+        listUser = (Button) findViewById(R.id.button_userList);
+
+        listUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AdminPage.this, AdminUserList.class);
+                startActivity(i);
             }
         });
     }

@@ -51,8 +51,8 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyView
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            letter = (TextView) itemView.findViewById(R.id.textView_letter);
-            name = (TextView) itemView.findViewById(R.id.textView_name);
+            letter = (TextView) itemView.findViewById(R.id.textView_letter_user);
+            name = (TextView) itemView.findViewById(R.id.textView_name_user);
             occupation = (TextView) itemView.findViewById(R.id.textView_occupation);
         }
     }

@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
@@ -37,7 +36,7 @@ public class AdminUserList extends AppCompatActivity {
             @Override
             protected void populateViewHolder(UserHandler viewHolder, User model, int position) {
                viewHolder.name.setText(model.getName());
-                viewHolder.occupation.setText(model.getOccupattion());
+                viewHolder.occupation.setText(model.getOccupation());
                 viewHolder.text.setText(String.valueOf(model                                                                                                                             .getName().charAt(0)));
                 }
         };

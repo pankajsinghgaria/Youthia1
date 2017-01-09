@@ -11,6 +11,8 @@
         layout="@layout/tool_bar"
         ></include>
 
+
+
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,8 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="registration id"
-            android:inputType="text"
-            android:maxLines="1" />
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:text="YU-" />
 
     </android.support.design.widget.TextInputLayout>
 

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +22,7 @@ import com.youthia.youthia.UserHandler;
  * Created by garia on 21-11-2016.
  */
 
-public class ContactsFragment extends Fragment {
+public class ContactsFragment extends Fragment{
 
     private RecyclerView mRecyclerView;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -42,10 +43,17 @@ public class ContactsFragment extends Fragment {
                 mDatabaseReference.child("Users").getRef()
         ) {
             @Override
-            protected void populateViewHolder(UserHandler viewHolder, User model, int position) {
+            protected void populateViewHolder(UserHandler viewHolder, User model, final int position) {
                 viewHolder.name.setText(model.getName());
                 viewHolder.occupation.setText(model.getOccupation());
-                viewHolder.text.setText(String.valueOf(model                                                                                                                             .getName().charAt(0)));
+                viewHolder.text.setText(String.valueOf(model.getName().charAt(0)));
+
+                viewHolder.mView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Log.e("tttt", "You clicked on "+ position);
+                    }
+                });
             }
         };
         mRecyclerView.setAdapter(adapter);
